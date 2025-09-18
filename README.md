@@ -96,7 +96,7 @@ Config a [FilterChain](https://github.com/tuannguyen511/Spring-and-Keycloak/blob
 
 Call to `/auth/login` with username and password. It should return an access token:
 
-![image](https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758187154679%2F43.jpg?alt=media&token=a9f514a2-16c3-4f46-b3bc-d1a20eb59060)
+<img src="https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758187154679%2F43.jpg?alt=media&token=a9f514a2-16c3-4f46-b3bc-d1a20eb59060" alt="image" width="400" border="2"/>
 
 **Sample JWT Token:**
 ```
@@ -134,15 +134,15 @@ Config to connect to PostgreSQL in [application.properties](https://github.com/t
 
 Alice Create Task: ✅ (Success - has USER role)
 
-![image](https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758189223651%2F26.jpg?alt=media&token=afd2dfcf-04a8-40fc-ab13-85a1b8048cd6)
+<img src="https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758189223651%2F26.jpg?alt=media&token=afd2dfcf-04a8-40fc-ab13-85a1b8048cd6" alt="image" width="400" border="2"/>
 
 Alice delete Task: ❌ (Access Denied - needs ADMIN role)
 
-![image](https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758189395334%2F11.jpg?alt=media&token=82de2d8d-6b6b-49ff-8ecf-feb6abee231c)
+<img src="https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758189395334%2F11.jpg?alt=media&token=82de2d8d-6b6b-49ff-8ecf-feb6abee231c" alt="image" width="400" border="2"/>
 
 Bob delete Task: ✅ (Success - has ADMIN role)
 
-![image](https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758189440015%2F45.jpg?alt=media&token=2a5987f2-e343-41f3-9896-76bf7ae03471)
+<img src="https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758189440015%2F45.jpg?alt=media&token=2a5987f2-e343-41f3-9896-76bf7ae03471" alt="image" width="400" border="2"/>
 
 ---
 
@@ -152,7 +152,7 @@ Go to Keycloak and create user **john** without any Realm role
 
 John login and get task: ❌ (Access Denied - no USER role)
 
-![image](https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758191133357%2F46.jpg?alt=media&token=804f3747-7186-497b-8a82-93799f4d2297)
+<img src="https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758191133357%2F46.jpg?alt=media&token=804f3747-7186-497b-8a82-93799f4d2297" alt="image" width="400" border="2"/>
 
 Go to Keycloak and create **user-group** Group
 
@@ -161,7 +161,7 @@ Go to Keycloak and create **user-group** Group
 
 John re-login to get new access token and get task again: ✅ (Success - inherited USER role from group)
 
-![image](https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758191115351%2F43.jpg?alt=media&token=8ba66e75-1b67-41cd-ba47-8fef9089041f)
+<img src="https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758191115351%2F43.jpg?alt=media&token=8ba66e75-1b67-41cd-ba47-8fef9089041f" alt="image" width="400" border="2"/>
 
 ---
 
@@ -182,11 +182,11 @@ Edit [JwtAuthenticationConverter](https://github.com/tuannguyen511/Spring-and-Ke
 
 Alice calls the new API: ✅ (Success - has TASK_CREATOR client role)
 
-![image](https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758192869526%2F23.jpg?alt=media&token=7c99449a-d975-4392-adfd-11002917d58f)
+<img src="https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758192869526%2F23.jpg?alt=media&token=7c99449a-d975-4392-adfd-11002917d58f" alt="image" width="400" border="2"/>
 
 Bob calls the new API: ❌ (Access Denied - doesn't have TASK_CREATOR client role)
 
-![image](https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758192899644%2F56.jpg?alt=media&token=50bd616f-f6a0-42b2-b023-dbdc26ace475)
+<img src="https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758192899644%2F56.jpg?alt=media&token=50bd616f-f6a0-42b2-b023-dbdc26ace475" alt="image" width="400" border="2"/>
 
 ---
 
@@ -222,4 +222,4 @@ curl -X POST \
 
 Call create Task API: ✅ (Success - service account has USER role)
 
-![image](https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758193490165%2F42.jpg?alt=media&token=4ce711f2-f87a-4678-b2ba-197949c7611c)
+<img src="https://firebasestorage.googleapis.com/v0/b/diary-b58b9.appspot.com/o/stnP0ISWyvSDZAahXoB9D883fNo1%2Ffiles%2F1758193490165%2F42.jpg?alt=media&token=4ce711f2-f87a-4678-b2ba-197949c7611c" alt="image" width="400" border="2"/>
